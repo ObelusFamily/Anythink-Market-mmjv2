@@ -10,4 +10,7 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Install and setup up docker
+   [docker docs](https://docs.docker.com/desktop/install/mac-install/)
+2. run `docker-compose up` in the root of the project.
+3. Confirm its working by visiting `http://localhost:3001`
