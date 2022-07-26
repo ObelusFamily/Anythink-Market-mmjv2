@@ -37,7 +37,9 @@ class Item extends React.Component {
     if (!this.props.item) {
       return null;
     }
-
+    if (!this.props.item.image) {
+      this.props.item.image = "/placeholder.png";
+    }
     const markup = {
       __html: marked(this.props.item.description, { sanitize: true }),
     };
@@ -56,7 +58,6 @@ class Item extends React.Component {
                 style={{ height: "500px", width: "100%", borderRadius: "6px" }}
               />
             </div>
-
             <div className="col-6">
               <h1>{this.props.item.title}</h1>
               <ItemMeta item={this.props.item} canModify={canModify} />
