@@ -25,7 +25,7 @@ ItemSchema.pre("validate", function (next) {
   }
 
   if (!this.image) {
-    this.image = "/placeholder.png";
+    this.image = `/placeholder.png`;
   }
 
   next();
